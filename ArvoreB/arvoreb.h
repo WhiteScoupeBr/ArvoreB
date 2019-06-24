@@ -4,12 +4,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define TIPO char
+#define TIPO int
 
-#define T 2           /*Número que define mínimo e máximo de chaves!*/
+#define T 3           /*Número que define mínimo e máximo de chaves!*/
 #define NOT_FOUND -1  /*Valor retornado quando o nó não existe!*/
 #define TRUE 1        /*Booleano para verdadeiro!*/
-#define FALSE 0       /*Booleano para falso!*/ 
+#define FALSE 0       /*Booleano para falso!*/
 
 /*Estrutura básica para uma árvore B: */
 typedef struct _node {
@@ -30,10 +30,10 @@ void imprimir (Arvore *a, int nivel);
 /*Função para buscar uma chave em uma árvore B:*/
 int buscar (Arvore *a, TIPO chave);
 
-/*Descrição: ????*/
+/*Função que divide um filho em dois e ajusta a árvore de modo que tenha um filho adicional.Fazendo com que a árvore cresça uma unidade*/
 Arvore* dividir_no (Arvore *x, int i, Arvore *y);
 
-/*Descrição: ????*/
+/*Função que insere uma chave na árvore que se presume não estar cheia durante a chamada do procedimento.*/
 Arvore* inserir_arvore_nao_cheia (Arvore *x, TIPO k);
 
 /*Função para inserir uma chave em uma árvore B:*/

@@ -2,22 +2,22 @@
 1556738976 source:c:\users\jpcos\downloads\estrutura trabalho\arvoreb\buscaarvoreb.c
 	"arvoreb.h"
 
-1556754148 c:\users\jpcos\downloads\estrutura trabalho\arvoreb\arvoreb.h
+1561334507 c:\users\jpcos\downloads\estrutura trabalho\arvoreb\arvoreb.h
 	<stdio.h>
 	<stdlib.h>
 
 1556735285 source:c:\users\jpcos\downloads\estrutura trabalho\arvoreb\criaarvoreb.c
 	"arvoreb.h"
 
-1561320243 source:c:\users\jpcos\downloads\estrutura trabalho\arvoreb\mainarvoreb.c
+1561334461 source:c:\users\jpcos\downloads\estrutura trabalho\arvoreb\mainarvoreb.c
 	"arvoreb.h"
 
-1556735285 source:c:\users\jpcos\downloads\estrutura trabalho\arvoreb\printarvoreb.c
+1561334413 source:c:\users\jpcos\downloads\estrutura trabalho\arvoreb\printarvoreb.c
 	"arvoreb.h"
 
 1556754139 source:c:\users\jpcos\downloads\estrutura trabalho\arvoreb\removearvoreb.c
 	"arvoreb.h"
 
-1561328036 source:c:\users\jpcos\downloads\estrutura trabalho\arvoreb\inserearvoreb.c
+1561334518 source:c:\users\jpcos\downloads\estrutura trabalho\arvoreb\inserearvoreb.c
 	"arvoreb.h"
 

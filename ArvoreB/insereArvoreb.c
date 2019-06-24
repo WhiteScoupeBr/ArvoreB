@@ -32,7 +32,7 @@ Arvore* dividir_no (Arvore *x, int i, Arvore *y)
     return x;
 }
 
-/*Descrição: ????*/
+/*Função que insere uma chave na árvore que se presume não estar cheia durante a chamada do procedimento.*/
 Arvore* inserir_arvore_nao_cheia (Arvore *x, TIPO k)
 {
     int i = x->n-1;
