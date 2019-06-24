@@ -61,5 +61,7 @@ int main () {
 
    imprimir (b, 0);
 
+   remover(b,44);
+
    return 0;
 }

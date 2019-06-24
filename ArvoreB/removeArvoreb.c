@@ -26,6 +26,7 @@ Arvore* remover_de_nao_folha (Arvore *a, int index)
         predecessor= pred->chaves[pred->n-1];
 
         a->chaves[index]=predecessor;
+        remove(a->filhos[index]);
         free(a->filhos[index]);
     }
     /*Se o filho tem menos de T chaves, observar o filhos[index+1~], substituindo o K pelo sucessor*/
@@ -38,14 +39,37 @@ Arvore* remover_de_nao_folha (Arvore *a, int index)
 
         sucessor= suc->chaves[0];
         a->chaves[index]=sucessor;
+        remove(a->filhos[index+1]);
         free(a->filhos[index+1]);
 
     }
-    /*Descrição ...*/
+    /*Caso index e index+1 tenham menos chaves que T, eles sao mesclados*/
     else
     {
-        /*Completar!!!!*/
-        printf("Completar\n");
+        Arvore *fil=a->filhos[index];
+        Arvore *irm=a->filhos[index+1];
+
+        fil->chaves[T-1]=a->chaves[index];
+
+        for(int cont=0;cont<irm->n;cont++)
+            fil->chaves[cont+T]=irm->chaves[cont];
+
+        if(fil->folha!=TRUE){
+            for(int cont=0;cont<=irm->n;++cont)
+                fil->filhos[cont+T]=irm->filhos[cont];
+        }
+
+        for(int cont=index+1;cont<a->n;++cont)
+            a->chaves[cont-1]=a->chaves[cont];
+
+        for(int cont=index+2;cont<=a->n;++cont)
+            a->filhos[cont-1]=a->filhos[cont];
+
+        fil->n+=irm->n+1;
+        a->n--;
+
+        free(irm);
+
     }
 
     return a;
@@ -127,11 +151,10 @@ Arvore *remover (Arvore *a, TIPO k)
         //Completar
         // bool flag = ((index==a->n)?TRUE:FALSE);
 
-        if(a->filhos[index]->n<T)
-        {
-            if(index!=0&&a->filhos[index-1]->n>=T)
+        //if(a->filhos[index]->n<T)
 
-            }
+            //if(index!=0&&a->filhos[index-1]->n>=T)
+
 
         printf("Completar\n");
 

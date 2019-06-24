@@ -2,9 +2,13 @@
 1556738976 source:c:\users\jpcos\downloads\estrutura trabalho\arvoreb\buscaarvoreb.c
 	"arvoreb.h"
 
+1561334518 "
+
 1561334507 c:\users\jpcos\downloads\estrutura trabalho\arvoreb\arvoreb.h
 	<stdio.h>
 	<stdlib.h>
+
+1561334507 
 
 1556735285 source:c:\users\jpcos\downloads\estrutura trabalho\arvoreb\criaarvoreb.c
 	"arvoreb.h"
@@ -19,5 +23,27 @@
 	"arvoreb.h"
 
 1561334518 source:c:\users\jpcos\downloads\estrutura trabalho\arvoreb\inserearvoreb.c
+	"arvoreb.h"
+
+1561384497 source:/home/jp/Documentos/ArvoreB/buscaArvoreb.c
+	"arvoreb.h"
+
+1561384497 /home/jp/Documentos/ArvoreB/arvoreb.h
+	<stdio.h>
+	<stdlib.h>
+
+1561384497 source:/home/jp/Documentos/ArvoreB/criaArvoreb.c
+	"arvoreb.h"
+
+1561384497 source:/home/jp/Documentos/ArvoreB/insereArvoreb.c
+	"arvoreb.h"
+
+1561384497 source:/home/jp/Documentos/ArvoreB/mainArvoreb.c
+	"arvoreb.h"
+
+1561384497 source:/home/jp/Documentos/ArvoreB/printArvoreb.c
+	"arvoreb.h"
+
+1561397198 source:/home/jp/Documentos/ArvoreB/removeArvoreb.c
 	"arvoreb.h"
 
