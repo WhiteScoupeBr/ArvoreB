@@ -29,16 +29,90 @@ int main () {
    a = inserir (a, 'Z');
    a = inserir (a, 'E');
 
-
    imprimir (a, 0);
+   printf("------------------\n");
 
-   remover(a,'S');
+    //Arvore de entrada teste 1
+   /*Arvore *c = criar();
 
-   imprimir(a,0);
+   c = inserir (c, 'G');
+   c = inserir (c, 'T');
+   c = inserir (c, 'R');
+   c = inserir (c, 'L');
+   c = inserir (c, 'D');
+   c = inserir (c, 'M');
+   c = inserir (c, 'I');
+   c = inserir (c, 'U');
+   c = inserir (c, 'X');
+   c = inserir (c, 'N');
+   c = inserir (c, 'Q');
+   c = inserir (c, 'B');
+   c = inserir (c, 'C');
+   c = inserir (c, 'Y');
+   c = inserir (c, 'E');
+   c = inserir (c, 'F');
 
-    remover(a,'T');
+   imprimir (c, 0);
+   printf("------------------\n");
 
-   imprimir(a,0);
+   remover(c,'N');
+   printf("Letra removida 'N'\n");
+   printf("Caso de Remocao 1\n");
+   imprimir (c, 0);
+   printf("------------------\n");
+
+   remover(c,'R');
+   printf("Letra removida 'R'\n");
+   printf("Caso de Remocao 2A\n");
+   imprimir (c, 0);
+   printf("------------------\n");
+
+   remover(c,'C');
+   printf("Letra removida 'C'\n");
+   printf("Caso de Remocao 2B\n");
+   imprimir (c, 0);
+   printf("------------------\n");
+   */
+
+   //Arvore de entrada teste 2
+   /*Arvore *d=criar();
+
+   d=inserir(d,'J');
+   d=inserir(d,'A');
+   d=inserir(d,'R');
+   d=inserir(d,'M');
+   d=inserir(d,'K');
+   d=inserir(d,'N');
+   d=inserir(d,'B');
+   d=inserir(d,'P');
+   d=inserir(d,'S');
+   d=inserir(d,'V');
+   d=inserir(d,'Z');
+   d=inserir(d,'C');
+   d=inserir(d,'D');
+
+   imprimir (d, 0);
+   printf("------------------\n");
+
+   remover(d,'C');
+   printf("Letra removida 'C'\n");
+   printf("Caso de Remocao 1\n");
+   imprimir (d, 0);
+   printf("------------------\n");
+
+   remover(d,'J');
+   printf("Letra removida 'J'\n");
+   printf("Caso de Remocao 2A\n");
+   imprimir (d, 0);
+   printf("------------------\n");
+
+   remover(d,'S');
+   printf("Letra removida 'S'\n");
+   printf("Caso de Remocao 2B\n");
+   imprimir (d, 0);
+   printf("------------------\n");
+   */
+
 
     //Arvore *b = criar();
 
@@ -67,11 +141,8 @@ int main () {
    b = inserir (b, 21);
    b = inserir (b, 67);
 
-   imprimir (b, 0);
-
-   remover(b,);
-
    imprimir (b, 0);*/
+
 
    return 0;
 }

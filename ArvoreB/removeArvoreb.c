@@ -113,7 +113,7 @@ int buscar_index_remocao (Arvore *a, TIPO chave)
     return i;
 }
 
-/*Descrição: ????*/
+/*Funcao que verifica qual o caso de remocao, e que ocorre a recursividade passando pelos filhos ate achar o K desejado*/
 Arvore *remover (Arvore *a, TIPO k)
 {
     int index;

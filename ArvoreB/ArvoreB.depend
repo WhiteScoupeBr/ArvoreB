@@ -50,7 +50,7 @@
 1561424227 source:/home/jp/Documentos/ArvoreB/buscaArvoreb.c
 	"arvoreb.h"
 
-1561424227 /home/jp/Documentos/ArvoreB/arvoreb.h
+1561505707 /home/jp/Documentos/ArvoreB/arvoreb.h
 	<stdio.h>
 	<stdlib.h>
 
@@ -60,10 +60,10 @@
 1561424227 source:/home/jp/Documentos/ArvoreB/insereArvoreb.c
 	"arvoreb.h"
 
-1561471290 source:/home/jp/Documentos/ArvoreB/mainArvoreb.c
+1561505495 source:/home/jp/Documentos/ArvoreB/mainArvoreb.c
 	"arvoreb.h"
 
-1561424227 source:/home/jp/Documentos/ArvoreB/printArvoreb.c
+1561479204 source:/home/jp/Documentos/ArvoreB/printArvoreb.c
 	"arvoreb.h"
 
 1561471398 source:/home/jp/Documentos/ArvoreB/removeArvoreb.c

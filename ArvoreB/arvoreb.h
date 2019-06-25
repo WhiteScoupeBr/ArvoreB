@@ -39,10 +39,10 @@ Arvore* inserir_arvore_nao_cheia (Arvore *x, TIPO k);
 /*Função para inserir uma chave em uma árvore B:*/
 Arvore *inserir (Arvore *raiz, TIPO chave);
 
-/*Descrição ...*/
+/*Caso 1;Função que remove a posição index de um nó folha*/
 Arvore* remover_de_folha (Arvore *a, int index);
 
-/*Descrição ...*/
+/*Função que remove a chave contida na posição index de um nó não folha*/
 Arvore* remover_de_nao_folha (Arvore *a, int index);
 
 //Função para verificar se raiz ficou vazia
@@ -51,7 +51,7 @@ Arvore *verificar_raiz_vazia (Arvore *raiz);
 /*Função que retorna o index da primeira chave maior ou igual à chave*/
 int buscar_index_remocao (Arvore *a, TIPO chave);
 
-/*Descrição: ????*/
+/*Funcao que verifica qual o caso de remocao, e que ocorre a recursividade passando pelos filhos ate achar o K desejado*/
 Arvore *remover (Arvore *a, TIPO k);
 
 
