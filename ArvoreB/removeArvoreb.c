@@ -1,6 +1,6 @@
 #include "arvoreb.h"
 
-/*Função que remove a posição index de um nó folha*/
+/*Caso 1;Função que remove a posição index de um nó folha*/
 Arvore* remover_de_folha (Arvore *a, int index)
 {
     for(int i=index+1; i<a->n; i++)
@@ -16,7 +16,7 @@ Arvore* remover_de_nao_folha (Arvore *a, int index)
     TIPO k = a->chaves[index];
     TIPO predecessor, sucessor;
 
-    /*Se o nó filho precede o K e tem pelo menos T chaves,substituindo k pelo predecessor*/
+    /*Caso 2A;Se o nó filho precede o K e tem pelo menos T chaves,substituindo k pelo predecessor*/
     if (a->filhos[index]->n >= T)
     {
         Arvore *pred=a->filhos[index];
@@ -24,12 +24,12 @@ Arvore* remover_de_nao_folha (Arvore *a, int index)
             pred=pred->filhos[pred->n];
 
         predecessor= pred->chaves[pred->n-1];
-
         a->chaves[index]=predecessor;
-        remove(a->filhos[index]);
-        free(a->filhos[index]);
+
+        pred->n--;
+
     }
-    /*Se o filho tem menos de T chaves, observar o filhos[index+1~], substituindo o K pelo sucessor*/
+    /*Caso 2B; Se o filho tem menos de T chaves, observar o filhos[index+1~], substituindo o K pelo sucessor*/
     else if (a->filhos[index+1]->n >= T)
     {
         Arvore *suc=a->filhos[index+1];
@@ -39,11 +39,16 @@ Arvore* remover_de_nao_folha (Arvore *a, int index)
 
         sucessor= suc->chaves[0];
         a->chaves[index]=sucessor;
-        remove(a->filhos[index+1]);
-        free(a->filhos[index+1]);
+
+        for(int i = 0;i<suc->n;i++){
+            suc->chaves[i]=suc->chaves[i+1];
+        }
+        suc->n--;
+
+
 
     }
-    /*Caso index e index+1 tenham menos chaves que T, eles sao mesclados*/
+    /*Caso 2C; Caso index e index+1 tenham menos chaves que T, eles sao mesclados*/
     else
     {
         Arvore *fil=a->filhos[index];
@@ -68,7 +73,7 @@ Arvore* remover_de_nao_folha (Arvore *a, int index)
         fil->n+=irm->n+1;
         a->n--;
 
-        free(irm);
+
 
     }
 
@@ -116,7 +121,6 @@ Arvore *remover (Arvore *a, TIPO k)
 {
     int index;
 
-    /*Completar!!!!!!!!!!!!!!*/
     if (a == NULL)
     {
         printf("Erro -> Árvore Vazia!\n");
@@ -143,20 +147,25 @@ Arvore *remover (Arvore *a, TIPO k)
         //Se este nó é um nó folha, então a chave não está na árvore
         if (a->folha)
         {
-            printf("\nA chave %c não está na árvore.\n",k);
+            printf("\nA chave %c nao esta na arvore.\n",k);
             //printf("\nA chave %d não está na árvore.\n",k);
             return a;
         }
 
-        //Completar
-        // bool flag = ((index==a->n)?TRUE:FALSE);
 
-        //if(a->filhos[index]->n<T)
+        for(int aux=0;aux<a->n;aux++){
+            if(k<a->chaves[aux]){
+                remover(a->filhos[aux],k);
+                break;
+            }
+        }
+        if(k>a->chaves[a->n-1]){
+            remover(a->filhos[a->n],k);
+        }
 
-            //if(index!=0&&a->filhos[index-1]->n>=T)
 
 
-        printf("Completar\n");
+
 
 
     }

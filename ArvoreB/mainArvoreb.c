@@ -4,10 +4,10 @@
 /*Função principal:*/
 int main () {
 
-  // Arvore *a = criar();
+   Arvore *a = criar();
 
    /*Exercicio 18-2.1 Cormen*/
-  /* a = inserir (a, 'F');
+   a = inserir (a, 'F');
    a = inserir (a, 'S');
    a = inserir (a, 'Q');
    a = inserir (a, 'K');
@@ -30,12 +30,17 @@ int main () {
    a = inserir (a, 'E');
 
 
-   imprimir (a, 0);*/
+   imprimir (a, 0);
 
-      Arvore *b = criar();
+   remover(a,'Q');
+
+   imprimir(a,0);
+
+
+    //Arvore *b = criar();
 
    /*Teste numérico inserção arvore B*/
-   b = inserir (b, 91);
+   /*b = inserir (b, 91);
    b = inserir (b, 90);
    b = inserir (b, 80);
    b = inserir (b, 71);
@@ -61,7 +66,9 @@ int main () {
 
    imprimir (b, 0);
 
-   remover(b,44);
+   remover(b,);
+
+   imprimir (b, 0);*/
 
    return 0;
 }

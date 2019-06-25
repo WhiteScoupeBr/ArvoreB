@@ -1,28 +1,28 @@
 # depslib dependency file v1.0
-1556738976 source:c:\users\jpcos\downloads\estrutura trabalho\arvoreb\buscaarvoreb.c
+1561416385 source:c:\users\jpcos\downloads\estrutura trabalho\arvoreb\buscaarvoreb.c
 	"arvoreb.h"
 
 1561334518 "
 
-1561334507 c:\users\jpcos\downloads\estrutura trabalho\arvoreb\arvoreb.h
+1561418478 c:\users\jpcos\downloads\estrutura trabalho\arvoreb\arvoreb.h
 	<stdio.h>
 	<stdlib.h>
 
 1561334507 
 
-1556735285 source:c:\users\jpcos\downloads\estrutura trabalho\arvoreb\criaarvoreb.c
+1561416385 source:c:\users\jpcos\downloads\estrutura trabalho\arvoreb\criaarvoreb.c
 	"arvoreb.h"
 
-1561334461 source:c:\users\jpcos\downloads\estrutura trabalho\arvoreb\mainarvoreb.c
+1561423425 source:c:\users\jpcos\downloads\estrutura trabalho\arvoreb\mainarvoreb.c
 	"arvoreb.h"
 
-1561334413 source:c:\users\jpcos\downloads\estrutura trabalho\arvoreb\printarvoreb.c
+1561418478 source:c:\users\jpcos\downloads\estrutura trabalho\arvoreb\printarvoreb.c
 	"arvoreb.h"
 
-1556754139 source:c:\users\jpcos\downloads\estrutura trabalho\arvoreb\removearvoreb.c
+1561423140 source:c:\users\jpcos\downloads\estrutura trabalho\arvoreb\removearvoreb.c
 	"arvoreb.h"
 
-1561334518 source:c:\users\jpcos\downloads\estrutura trabalho\arvoreb\inserearvoreb.c
+1561416385 source:c:\users\jpcos\downloads\estrutura trabalho\arvoreb\inserearvoreb.c
 	"arvoreb.h"
 
 1561384497 source:/home/jp/Documentos/ArvoreB/buscaArvoreb.c
