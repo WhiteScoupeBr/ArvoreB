@@ -57,24 +57,21 @@ Arvore* remover_de_nao_folha (Arvore *a, int index)
         fil->chaves[T-1]=a->chaves[index];
 
         for(int cont=0;cont<irm->n;cont++)
-            fil->chaves[cont+T]=irm->chaves[cont];
+            fil->chaves[cont+T-1]=irm->chaves[cont];
 
         if(fil->folha!=TRUE){
-            for(int cont=0;cont<=irm->n;++cont)
+            for(int cont=0;cont<=irm->n;cont++)
                 fil->filhos[cont+T]=irm->filhos[cont];
         }
 
-        for(int cont=index+1;cont<a->n;++cont)
+        for(int cont=index+1;cont<a->n;cont++)
             a->chaves[cont-1]=a->chaves[cont];
 
-        for(int cont=index+2;cont<=a->n;++cont)
+        for(int cont=index+2;cont<=a->n;cont++)
             a->filhos[cont-1]=a->filhos[cont];
 
-        fil->n+=irm->n+1;
+        fil->n+=irm->n;
         a->n--;
-
-
-
     }
 
     return a;
