@@ -32,10 +32,13 @@ int main () {
 
    imprimir (a, 0);
 
-   remover(a,'Q');
+   remover(a,'S');
 
    imprimir(a,0);
 
+    remover(a,'T');
+
+   imprimir(a,0);
 
     //Arvore *b = criar();
 

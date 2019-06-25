@@ -1,32 +1,57 @@
+#Neste exemplo de Makefile, os arquivos objetos (.o) são gerados separadamente, assim, somente arquivos fonte (.c) alterados são recompilados para gerar um novo .o. Então o novo .o é linkado com os outros .o (dos arquivos não alterados) para gerar o executável. O make sabe o que deve ser recompilado com base nos timestamps dos arquivos fonte e seus respectivos arquivos objeto.
+
+
+######### Sintaxe ###########
+#regra: dependências
+#<TAB>	comando	
+#############################
+
+#==============
+#A regra all: é usada para construir o sistema de forma incremental 
 all: saida
 	@echo " " 
-	@echo "Copilação concluída!!"
+	@echo "O Codigo foi compilado"
 	@echo " " 
 	 
-saida: mainArvore.o buscaArvoreb.o criaArvoreb.o insereArvoreb.o printArvoreb.o removeArvoreb.o
-	gcc -o saida mainArvore.o buscaArvoreb.o criaArvoreb.o insereArvoreb.o printArvoreb.o removeArvoreb.o
 
-mainArvore.o: mainPrincipal.c arvoreb.h
-	-o mainArvore.o -c mainArvore.c
 
-buscaArvoreb.o: buscaArvoreb.c arvoreb.h
-	-o buscaArvoreb.o -c buscaArvoreb.c
+saida: mainArvoreb.o insereArvoreb.o printArvoreb.o buscaArvoreb.o criaArvoreb.o removeArvoreb.o
+	gcc -o saida mainArvoreb.o insereArvoreb.o printArvoreb.o buscaArvoreb.o criaArvoreb.o removeArvoreb.o 
 
-criaArvoreb.o: criaArvoreb.c arvoreb.h
-	-o criaArvoreb.o -c criaArvoreb.c
 
-insereArvoreb.o: insereArvoreb.c arvoreb.h
-	-o insereArvoreb.o -c insereArvoreb.c
 
-printArvoreb.o: printArvoreb.c arvoreb.h
-	-o printArvoreb.o -c printArvoreb.c
+mainArvoreb.o: mainArvoreb.c
+	gcc -o mainArvoreb.o -c mainArvoreb.c 
 
-removeArvoreb.o: removeArvoreb.c arvoreb.h
-	-o removeArvoreb.o -c removeArvoreb.c
+
+insereArvoreb.o: insereArvoreb.c
+	gcc -o insereArvoreb.o -c insereArvoreb.c
+
+
+printArvoreb.o: printArvoreb.c
+	gcc -o printArvoreb.o -c printArvoreb.c
+
+
+buscaArvoreb.o: buscaArvoreb.c
+	gcc -o buscaArvoreb.o -c buscaArvoreb.c  
+
+
+criaArvoreb.o: criaArvoreb.c
+	gcc -o criaArvoreb.o -c criaArvoreb.c
+
+
+removeArvoreb.o: removeArvoreb.c
+	gcc -o removeArvoreb.o -c removeArvoreb.c 
+
 
 clean: 
 	rm -f *.o
+
 	
 execClean:
 	rm -f saida
+
+
+
+
 

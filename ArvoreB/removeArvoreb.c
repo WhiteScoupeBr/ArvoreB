@@ -170,4 +170,3 @@ Arvore *remover (Arvore *a, TIPO k)
 
     return a;
 }
-
